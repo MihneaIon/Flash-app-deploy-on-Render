@@ -3,6 +3,10 @@ import requests
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return "App 2 (helper API) is running."
+
 @app.route('/show')
 def show_data_from_app1():
     try:
