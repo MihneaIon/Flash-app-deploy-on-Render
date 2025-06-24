@@ -1,18 +1,18 @@
-from flask import Flask, render_template
+from flask import Flask, jsonify
 import requests
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
+@app.route('/show')
+def show_data_from_app1():
     try:
-        # Change this to the actual deployed URL of app2 on Render
-        response = requests.get("https://google.com")
-        api_response = response.json().get("message", "No response")
+        # Replace this with your actual deployed App 1 URL
+        response = requests.get("https://your-app1-url.onrender.com/data")
+        data = response.json()
     except Exception as e:
-        api_response = f"Error contacting API: {e}"
+        data = {"error": str(e)}
 
-    return render_template("index.html", api_response=api_response)
+    return jsonify({"received_data": data})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
