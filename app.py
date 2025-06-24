@@ -7,7 +7,7 @@ app = Flask(__name__)
 def show_data_from_app1():
     try:
         # Replace this with your actual deployed App 1 URL
-        response = requests.get("https://your-app1-url.onrender.com/data")
+        response = requests.get("https://flash-app-deploy-on-render2.onrender.com/data")
         data = response.json()
     except Exception as e:
         data = {"error": str(e)}
