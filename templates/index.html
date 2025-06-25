@@ -1469,6 +1469,7 @@
 
         // Original functionality
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            console.log('anchore!!!!!!!!!!!',anchor)
             anchor.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
                 // Check if href is just # or has a valid ID
