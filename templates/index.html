@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -122,7 +122,7 @@
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 15px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .hero p {
@@ -137,7 +137,7 @@
             border-radius: 20px;
             padding: 30px;
             margin-bottom: 40px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             animation: slideInLeft 0.8s ease-out;
         }
 
@@ -195,8 +195,13 @@
             opacity: 0.9;
         }
 
-        .positive { color: var(--bt-yellow); }
-        .negative { color: var(--bt-red); }
+        .positive {
+            color: var(--bt-yellow);
+        }
+
+        .negative {
+            color: var(--bt-red);
+        }
 
         .quick-actions {
             display: grid;
@@ -241,14 +246,14 @@
             background: rgba(245, 241, 232, 0.95);
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             animation: slideInUp 0.8s ease-out;
         }
 
         .dashboard-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
         }
 
         .card-header {
@@ -269,12 +274,29 @@
             color: white;
         }
 
-        .transactions-icon { background: linear-gradient(135deg, var(--bt-light-blue), var(--bt-blue)); }
-        .reports-icon { background: linear-gradient(135deg, var(--bt-yellow), #DAA520); }
-        .invoices-icon { background: linear-gradient(135deg, #f59e0b, #d97706); }
-        .payroll-icon { background: linear-gradient(135deg, var(--bt-red), #B22222); }
-        .treasury-icon { background: linear-gradient(135deg, var(--bt-blue), var(--bt-dark-blue)); }
-        .cards-icon { background: linear-gradient(135deg, var(--bt-light-blue), var(--bt-blue)); }
+        .transactions-icon {
+            background: linear-gradient(135deg, var(--bt-light-blue), var(--bt-blue));
+        }
+
+        .reports-icon {
+            background: linear-gradient(135deg, var(--bt-yellow), #DAA520);
+        }
+
+        .invoices-icon {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+
+        .payroll-icon {
+            background: linear-gradient(135deg, var(--bt-red), #B22222);
+        }
+
+        .treasury-icon {
+            background: linear-gradient(135deg, var(--bt-blue), var(--bt-dark-blue));
+        }
+
+        .cards-icon {
+            background: linear-gradient(135deg, var(--bt-light-blue), var(--bt-blue));
+        }
 
         .card-title {
             font-size: 1.3rem;
@@ -339,7 +361,7 @@
             border-radius: 20px;
             padding: 30px;
             margin-bottom: 40px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
 
         .activity-item {
@@ -645,8 +667,13 @@
         }
 
         @keyframes slideDown {
-            from { transform: translateY(-100%); }
-            to { transform: translateY(0); }
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
         }
 
         @keyframes fadeInUp {
@@ -654,6 +681,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -665,6 +693,7 @@
                 opacity: 0;
                 transform: translateY(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -676,6 +705,7 @@
                 opacity: 0;
                 transform: translateX(-50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -683,18 +713,40 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
         }
 
         @keyframes pulse-status {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
         }
 
         @keyframes typing {
-            0%, 60%, 100% { transform: translateY(0); }
-            30% { transform: translateY(-10px); }
+
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+            }
+
+            30% {
+                transform: translateY(-10px);
+            }
         }
 
         .bg-shapes {
@@ -740,8 +792,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
         }
 
         @media (max-width: 768px) {
@@ -787,6 +846,7 @@
     </style>
 
 </head>
+
 <body>
     <div class="bg-shapes">
         <div class="shape"></div>
@@ -825,7 +885,7 @@
 
             <section class="account-overview">
                 <h2 style="margin-bottom: 25px; color: #1f2937;">Prezentare Conturi</h2>
-                
+
                 <div class="balance-cards">
                     <div class="balance-card">
                         <div class="balance-label">Cont Curent Principal</div>
@@ -880,7 +940,7 @@
                     <div class="card-content">
                         Vizualizează toate tranzacțiile, filtrează după criterii și exportă datele pentru contabilitate.
                     </div>
-                    
+
                     <div class="card-stats">
                         <div class="stat-item">
                             <div class="stat-number">149</div>
@@ -897,7 +957,7 @@
                     </div>
                     <br>
                     <a href="#" class="btn-primary">Configurează</a>
-                    
+
                 </div>
 
                 <div class="dashboard-card">
@@ -938,7 +998,8 @@
                         </div>
                     </div>
                     <div class="card-content">
-                        Gestionează cardurile de debit și credit ale companiei. Setează limite și monitorizează cheltuielile.
+                        Gestionează cardurile de debit și credit ale companiei. Setează limite și monitorizează
+                        cheltuielile.
                     </div>
                     <div class="card-stats">
                         <div class="stat-item">
@@ -957,7 +1018,7 @@
                     <br>
                     <a href="#" class="btn-primary">Administrează</a>
                 </div>
-                 <div class="dashboard-card">
+                <div class="dashboard-card">
                     <div class="card-header">
                         <div class="card-icon reports-icon">📈</div>
                         <div>
@@ -981,7 +1042,8 @@
                             <div class="stat-number">156</div>
                             <div class="stat-label">Exporturi</div>
                         </div>
-                        <a href="https://flash-app-deploy-on-render2.onrender.com" class="btn-primary" target="_blank">Generează</a>
+                        <a href="https://flash-app-deploy-on-render2.onrender.com" class="btn-primary"
+                            target="_blank">Generează</a>
                     </div>
                 </div>
                 <div class="dashboard-card">
@@ -1041,12 +1103,12 @@
                     <br>
                     <a href="#" class="btn-primary">Configurează</a>
                 </div>
-                 
+
             </section>
 
             <section class="recent-activity">
                 <h2 style="margin-bottom: 25px; color: #1f2937;">Activitate Recentă</h2>
-                
+
                 <div class="activity-item">
                     <div class="activity-icon" style="background: #10b981; color: white;">↓</div>
                     <div class="activity-details">
@@ -1100,7 +1162,7 @@
                 </div>
                 <button class="chat-close" id="chatClose">×</button>
             </div>
-            
+
             <div class="chat-messages" id="chatMessages">
                 <div class="message assistant">
                     <div>Salut! Sunt asistentul tău financiar virtual. Te pot ajuta cu:</div>
@@ -1128,16 +1190,13 @@
                     <button class="suggestion-btn" data-message="Calculează EBITDA pentru compania mea">EBITDA</button>
                     <button class="suggestion-btn" data-message="Calculează rating-ul companiei">Rating</button>
                     <button class="suggestion-btn" data-message="Cum optimizez fluxul de numerar?">Cash Flow</button>
-                    <button class="suggestion-btn" data-message="Strategii de investiții pentru compania mea">Investiții</button>
+                    <button class="suggestion-btn"
+                        data-message="Strategii de investiții pentru compania mea">Investiții</button>
                 </div>
-                
+
                 <div class="chat-input-wrapper">
-                    <textarea 
-                        class="chat-input" 
-                        id="chatInput" 
-                        placeholder="Scrie-mi o întrebare despre finanțele companiei..."
-                        rows="1"
-                    ></textarea>
+                    <textarea class="chat-input" id="chatInput"
+                        placeholder="Scrie-mi o întrebare despre finanțele companiei..." rows="1"></textarea>
                     <button class="chat-send" id="chatSend">
                         <span>➤</span>
                     </button>
@@ -1213,7 +1272,7 @@
                 this.chatOverlay.classList.add('active');
                 this.chatContainer.classList.add('active');
                 this.chatInput.focus();
-                
+
                 this.assistantBtn.style.transform = 'scale(0.8)';
                 setTimeout(() => {
                     this.assistantBtn.style.transform = 'scale(1)';
@@ -1289,7 +1348,7 @@
             addMessage(text, sender) {
                 const messageDiv = document.createElement('div');
                 messageDiv.className = `message ${sender}`;
-                
+
                 if (Array.isArray(text)) {
                     messageDiv.innerHTML = text.map(line => `<div>${line}</div>`).join('');
                 } else {
@@ -1303,7 +1362,7 @@
             addAssistantMessage(response, tips) {
                 const messageDiv = document.createElement('div');
                 messageDiv.className = 'message assistant';
-                
+
                 let content = '';
                 if (Array.isArray(response)) {
                     content = response.map(line => `<div>${line}</div>`).join('');
@@ -1392,7 +1451,7 @@
                 this.isTyping = show;
                 this.typingIndicator.style.display = show ? 'block' : 'none';
                 this.chatSend.disabled = show;
-                
+
                 if (show) {
                     this.scrollToBottom();
                 }
@@ -1411,9 +1470,16 @@
         // Original functionality
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const href = this.getAttribute('href');
+                // Check if href is just # or has a valid ID
+                if (href === '#') {
+                    e.preventDefault();
+                    return;
+                }
+
+                const target = document.querySelector(href);
                 if (target) {
+                    e.preventDefault();
                     target.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
@@ -1434,7 +1500,7 @@
         });
 
         document.querySelectorAll('.dashboard-card').forEach(card => {
-            card.addEventListener('click', function(e) {
+            card.addEventListener('click', function (e) {
                 const ripple = document.createElement('div');
                 ripple.style.cssText = `
                     position: absolute;
@@ -1444,17 +1510,17 @@
                     animation: ripple 0.6s linear;
                     pointer-events: none;
                 `;
-                
+
                 const rect = this.getBoundingClientRect();
                 const size = Math.max(rect.width, rect.height);
                 ripple.style.width = ripple.style.height = size + 'px';
                 ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
                 ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
-                
+
                 this.style.position = 'relative';
                 this.style.overflow = 'hidden';
                 this.appendChild(ripple);
-                
+
                 setTimeout(() => {
                     ripple.remove();
                 }, 600);
@@ -1473,7 +1539,7 @@
         document.head.appendChild(rippleStyle);
 
         document.querySelectorAll('.balance-card').forEach(card => {
-            card.addEventListener('mousemove', function(e) {
+            card.addEventListener('mousemove', function (e) {
                 const rect = this.getBoundingClientRect();
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
@@ -1481,28 +1547,28 @@
                 const centerY = rect.height / 2;
                 const rotateX = (y - centerY) / 10;
                 const rotateY = (centerX - x) / 10;
-                
+
                 this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
             });
-            
-            card.addEventListener('mouseleave', function() {
+
+            card.addEventListener('mouseleave', function () {
                 this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
             });
         });
 
         document.querySelectorAll('.action-btn').forEach(btn => {
-            btn.addEventListener('click', function(e) {
+            btn.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 this.style.transform = 'scale(0.95)';
                 setTimeout(() => {
                     this.style.transform = 'scale(1) translateY(-3px)';
                 }, 150);
-                
+
                 const icon = this.querySelector('.action-icon').textContent;
                 let message = '';
-                
-                switch(icon) {
+
+                switch (icon) {
                     case '💸':
                         message = 'Transfer rapid inițiat...';
                         break;
@@ -1519,7 +1585,7 @@
                         message = 'Deschid convertorul de valută...';
                         break;
                 }
-                
+
                 showNotification(message);
             });
         });
@@ -1543,21 +1609,21 @@
                 font-size: 0.9rem;
                 color: #374151;
             `;
-            
+
             notification.innerHTML = `
                 <div style="display: flex; align-items: center; gap: 10px;">
                     <span style="font-size: 1.2rem;">${type === 'success' ? '✅' : type === 'error' ? '❌' : 'ℹ️'}</span>
                     <span>${message}</span>
                 </div>
             `;
-            
+
             document.body.appendChild(notification);
-            
+
             setTimeout(() => {
                 notification.style.opacity = '1';
                 notification.style.transform = 'translateX(0)';
             }, 100);
-            
+
             setTimeout(() => {
                 notification.style.opacity = '0';
                 notification.style.transform = 'translateX(100%)';
@@ -1572,7 +1638,7 @@
                 minute: '2-digit',
                 second: '2-digit'
             });
-            
+
             let clockElement = document.querySelector('.live-clock');
             if (!clockElement) {
                 clockElement = document.createElement('div');
@@ -1584,10 +1650,10 @@
                 `;
                 document.querySelector('.user-profile').appendChild(clockElement);
             }
-            
+
             clockElement.textContent = timeString;
         }
-        
+
         updateClock();
         setInterval(updateClock, 1000);
 
@@ -1619,19 +1685,19 @@
                 const finalValue = element.textContent;
                 const numericValue = parseFloat(finalValue.replace(/[^\d.-]/g, ''));
                 const currency = finalValue.replace(/[\d.-]/g, '').trim();
-                
+
                 let currentValue = 0;
                 const increment = numericValue / 50;
                 const duration = 2000;
                 const stepTime = duration / 50;
-                
+
                 const counter = setInterval(() => {
                     currentValue += increment;
                     if (currentValue >= numericValue) {
                         currentValue = numericValue;
                         clearInterval(counter);
                     }
-                    
+
                     element.textContent = new Intl.NumberFormat('ro-RO', {
                         minimumFractionDigits: 2,
                         maximumFractionDigits: 2
@@ -1655,12 +1721,12 @@
                 pointer-events: none;
                 animation: particleFloat 8s linear infinite;
             `;
-            
+
             particle.style.left = Math.random() * 100 + '%';
             particle.style.animationDelay = Math.random() * 8 + 's';
-            
+
             document.querySelector('.bg-shapes').appendChild(particle);
-            
+
             setTimeout(() => {
                 particle.remove();
             }, 8000);
@@ -1689,9 +1755,9 @@
 
         setInterval(createParticle, 3000);
 
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             if (e.ctrlKey || e.metaKey) {
-                switch(e.key) {
+                switch (e.key) {
                     case '1':
                         e.preventDefault();
                         document.querySelector('a[href="#tranzactii"]')?.click();
@@ -1725,22 +1791,21 @@
         console.log('🚀 Preda Adina-Daniela');
     </script>
 </body>
-</html>
-                        <div class="stat-item">
-                            <div class="stat-number">149</div>
-                            <div class="stat-label">Luna aceasta</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">12</div>
-                            <div class="stat-label">Astăzi</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">14</div>
-                            <div class="stat-label">În procesare</div>
-                        </div>
-                    </div>
-                    <br>
-                    <a href="#" class="btn-primary">Vezi Toate</a>
-                </div>
 
-               
+</html>
+<div class="stat-item">
+    <div class="stat-number">149</div>
+    <div class="stat-label">Luna aceasta</div>
+</div>
+<div class="stat-item">
+    <div class="stat-number">12</div>
+    <div class="stat-label">Astăzi</div>
+</div>
+<div class="stat-item">
+    <div class="stat-number">14</div>
+    <div class="stat-label">În procesare</div>
+</div>
+</div>
+<br>
+<a href="#" class="btn-primary">Vezi Toate</a>
+</div>
