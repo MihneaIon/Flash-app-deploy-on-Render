@@ -1468,16 +1468,14 @@
         const assistant = new BTGoAssistant();
 
         // Original functionality
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            console.log('anchore!!!!!!!!!!!',anchor)
+        // Original functionality
+        document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
-                // Check if href is just # or has a valid ID
-                if (href === '#') {
+                if (!href || href === '#') {
                     e.preventDefault();
                     return;
                 }
-
                 const target = document.querySelector(href);
                 if (target) {
                     e.preventDefault();
@@ -1485,6 +1483,9 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
+                } else {
+                    // Optional: log a warning if the target section is missing
+                    console.warn(`Section ${href} not found in the document.`);
                 }
             });
         });
