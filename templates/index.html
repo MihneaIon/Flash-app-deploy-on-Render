@@ -862,7 +862,8 @@
                     BT-GO Business
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#dashboard" id="dashboard">Dashboard</a></li>
+                    <!-- <div id="dashboard">...</div> -->
                     <li><a href="#tranzactii">Tranzacții</a></li>
                     <li><a href="#rapoarte">Rapoarte</a></li>
                     <li><a href="#servicii">Servicii</a></li>
@@ -1467,7 +1468,6 @@
         // Initialize assistant
         const assistant = new BTGoAssistant();
 
-        // Original functionality
         // Original functionality
         document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
